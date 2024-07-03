@@ -1,39 +1,46 @@
-//alert("hello!");
+//alert("Hello");
 
-/*
-L'opérateur ET : &&
-*/
-// -- Si je cumule 2 conditions :
-// => prenom === prenomLogin
-// => monAge === ageLogin
-// pour que les 2 correspondent pour être validés il faut les associer
-if ( (prenomLogin === prenom) && (ageLogin === monAge) ) {
-    /* ... code ... */
-    /* je ne rentre ici que si les 2 conditions sont vraies */
-}
-if ((A) && (B)){}
-//=> si A est FAUX et B est VRAI => FAUX
-//=> si A est VRAI et B est FAUX => FAUX
-//=> si A est FAUX et B est FAUX => FAUX
-//=> si A est VRAI et B est VRAI => VRAI
+/* je déclare mes variables */
+let nb1, nb2, resultat;
 
-/*
-L'opérateur OU : ||
-*/
-if ( (C) || (D) ){}
-//=> si C est FAUX et D est FAUX => FAUX
-//=> si C est FAUX et D est VRAI => VRAI
-//=> si C est VRAI et D est FAUX => VRAI
-//=> si C est VRAI et D est VRAI => VRAI
+/* j'affecte des valeurs */
+nb1 = 10;
+nb2 = 5;
 
-/*
-L'opérateur "!" signifie : le contraire de
-*/
-let utilisateurLog = true;
-if(!utilisateurLog){
-    //si l'utilisateur n'est pas loggé.
-}
-// ce qui revient à écrire :
-if (utilisateurLog == false) {
-    //si l'utilisateur n'est pas loggé.
-}
+/* j'utilise mes variables avec un calcul */
+resultat = nb1 + nb2;
+
+/* j'affiche mon résultat dans la console */
+console.log(resultat);
+
+// -- 2. Soustraction
+resultat = nb1 - nb2;
+console.log(resultat);
+
+// -- 3. Multiplication
+resultat = nb1 * nb2;
+console.log(resultat);
+
+// -- 4. Division
+resultat = nb1 / nb2;
+console.log(resultat);
+
+// -- 5. Modulo
+// -- Le Modulo retourne le reste d'une Division
+// -- modulo de nb1 % nb2 avec l'opérateur "%"
+resultat = nb1 % nb2;
+console.log(resultat);
+
+// -- et maintenant je ré-affecte une valeur à nb1
+nb1 = 11;
+resultat = nb1 % nb2;
+console.log("Le reste de la division de " + nb1 + " par " + nb2 + " est égal à : " + resultat);
+
+// -- 6. Ecritures simplifiées
+nb1 = 15;
+console.log("le 1er = " + nb1);
+nb1 = nb1 + 5;// égal à 20
+console.log("le 2éme = " + nb1);
+
+nb1 += 10;
+console.log('Le résultat de "nb1 += 10;" est ' + nb1);
